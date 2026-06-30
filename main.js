@@ -16,6 +16,7 @@ var init = function(){
 			$("#card-list").html(html);
 
             console.log("logging succeeded");
+            console.log("logging okay");
 		}
 	);
 }
