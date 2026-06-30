@@ -8,8 +8,6 @@ var init = function(){
 	spectralKitten.loadCards(
 		function(cards)
 		{
-			console.log("Cards Loaded : " + spectralKitten.cards.length);
-
 			var source = $("#card-list-template").html();
 			var template = Handlebars.compile(source);
 
@@ -17,6 +15,7 @@ var init = function(){
 			var html = template(context);
 			$("#card-list").html(html);
 
+            console.log("logging okay");
 		}
 	);
 }
